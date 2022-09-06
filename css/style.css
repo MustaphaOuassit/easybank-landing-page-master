@@ -47,12 +47,13 @@ header nav{
 header nav .icon-menu{
     background: none;
     border: none;
+    cursor: pointer;
 }
 header nav ul{
     position: absolute;
     top: 3rem;
     width: 100%;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -60,7 +61,6 @@ header nav ul{
     padding: 1rem;
     background-color: var(--White);
     border-radius: .2rem;
-
 }
 
 header nav ul li{
@@ -84,6 +84,10 @@ header nav ul li a{
     color: var(--White);
     font-weight: 700;
     display: none;
+}
+
+.display{
+    display: flex;
 }
 
 header nav .btn {
