@@ -36,7 +36,7 @@ body{
 }
 
 header{
-    padding: .5rem;
+    padding: .8rem;
     background-color: var(--White);
 }
 
@@ -109,42 +109,38 @@ main{
     z-index: -1;
 }
 
-
 .slide{
     display: flex;
-    height: 41.5rem;
-    background-color: green;
-    justify-content: space-between;
+    background-color: var(--Very-light-gray);
+    flex-direction: column-reverse;
+    justify-content: center;
     align-items: center;
-    padding-left: var(--left);
     position: relative;
-    
-}
-
-.slide .intro-product{
 }
 
 .slide .intro-img-product{
-    background-image: url("../images/bg-intro-desktop.svg");
-    position: absolute;
-    right: 0rem;
+    /*position: absolute;
+    right: 0;
     bottom: 0;
     padding-left: 3.5rem;
-    height: 57.7rem;
-   
+    height: 57.7rem;*/
+    
 }
 
-.slide .intro-img-product img{
+.slide .intro-img-product .bg{
+    position: absolute;
+    left: 0;
+    top: -25vw;
+    width: 100vw;
+}
 
+.slide .intro-img-product .mockup{
     position: relative;
-    top: 8.6rem;
-    left: 8rem;
+    width: 80vw;
+    left: 0;
+    margin-top: -28.3vw;
 }
 
-.adjustment{
-    padding-left: var(--left);
-    padding-right: var(--left);
-}
 
 
 
@@ -155,7 +151,7 @@ main{
         margin-right: auto;
     }
     header{
-        padding: 1rem 0 1rem 0;
+        padding: 1rem var(--left) 1rem var(--left);
     }
 
     header nav .icon-menu{
@@ -181,6 +177,59 @@ main{
 
     header nav .btn {
         display: block;
+    }
+
+    main{
+        position: relative;
+        z-index: -1;
+        overflow-x: hidden;
+    }
+    
+    
+    .slide{
+        display: flex;
+        height: 41.5rem;
+        background-color: var(--Very-light-gray);
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: var(--left);
+        position: relative;
+    }
+    
+    
+    .slide .intro-product{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 30rem;
+    }
+    
+    .slide .intro-product h1{
+        color: var(--Dark-blue);
+        font-size: 3rem;
+        font-weight: 400;
+    }
+    
+    .slide .intro-product p{
+        color: var(--Grayish-blue);
+        font-weight: 400;
+        line-height: 1.8rem;
+    }
+    
+    .slide .intro-img-product{
+        background-image: url("../images/bg-intro-desktop.svg");
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding-left: 3.5rem;
+        height: 57.7rem;
+    }
+    .slide .intro-img-product img{
+    
+        position: relative;
+        top: 8.6rem;
+        left: 8rem;
     }
 }
 
