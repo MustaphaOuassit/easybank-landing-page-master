@@ -117,6 +117,8 @@ main{
     align-items: center;
     position: relative;
     overflow: hidden;
+    gap: 2rem;
+    padding-bottom: 8rem;
 }
 
 .slide .intro-product {
@@ -125,8 +127,7 @@ main{
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding-left: var(--left);
-    padding-right: var(--left);
+    padding: 0 2rem 0 2rem;
 }
 
 
@@ -157,8 +158,72 @@ main{
     margin-top: -28.4vw;
 }
 
+.services{
+    background-color: var(--Light-grayish-blue);
+    display: flex;
+    flex-direction: column;
+    padding: 8rem 2rem 8rem 2rem;
+    gap: 8rem;
+}
 
+.services .header-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
 
+.services .header-section span{
+    color: var(--Dark-blue);
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.services .header-section p{
+
+    color: var(--Grayish-blue);
+    font-weight: 400;
+    line-height: 1.8rem;
+    text-align: center;
+
+}
+
+.services .row-services {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.services .row-services .items-service{
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.services .row-services .items-service img{
+    width: 20vw;
+}
+
+.services .row-services .items-service span{
+    color: var(--Dark-blue);
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.services .row-services .items-service p{
+    color: var(--Grayish-blue);
+    font-weight: 400;
+    line-height: 1.8rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
 
 @media screen and (min-width: 1440px) {
     body{
@@ -205,6 +270,8 @@ main{
         justify-content: space-between;
         padding-left: var(--left);
         overflow: unset;
+        gap:0;
+        padding-bottom: 0;
     }
 
     
@@ -243,10 +310,5 @@ main{
         margin-top: 0;
     }
 }
-.helo{
-    height: 50rem;
-    background-color: red;
-}
-
 
 
