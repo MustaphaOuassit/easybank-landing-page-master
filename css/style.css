@@ -21,7 +21,8 @@
 
     /* Adjustment */
 
-    --left: 15rem;
+    --left: 10rem;
+    --spaces: 6rem;
 }
 
 *{
@@ -118,7 +119,7 @@ main{
     position: relative;
     overflow: hidden;
     gap: 2rem;
-    padding-bottom: 8rem;
+    padding-bottom: var(--spaces);
 }
 
 .slide .intro-product {
@@ -162,8 +163,8 @@ main{
     background-color: var(--Light-grayish-blue);
     display: flex;
     flex-direction: column;
-    padding: 8rem 2rem 8rem 2rem;
-    gap: 8rem;
+    padding: var(--spaces) 2rem var(--spaces) 2rem;
+    gap: 4rem;
 }
 
 .services .header-section{
@@ -176,8 +177,8 @@ main{
 
 .services .header-section span{
     color: var(--Dark-blue);
-    font-size: 3rem;
-    font-weight: 400;
+    font-size: 2.5rem;
+    font-weight: 300;
     text-align: center;
 }
 
@@ -193,21 +194,21 @@ main{
 .services .row-services {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 3rem;
 }
 
 .services .row-services .items-service{
 
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
     justify-content: center;
     align-items: center;
 
 }
 
 .services .row-services .items-service img{
-    width: 20vw;
+    width: 7rem;
 }
 
 .services .row-services .items-service span{
@@ -222,7 +223,6 @@ main{
     font-weight: 400;
     line-height: 1.8rem;
     text-align: center;
-    font-size: 1.2rem;
 }
 
 @media screen and (min-width: 1440px) {
@@ -308,6 +308,58 @@ main{
         left: 8rem;
         width: auto;
         margin-top: 0;
+    }
+
+    .services{
+    padding: var(--spaces) var(--left) var(--spaces) var(--left);
+    }
+
+    .services .header-section{
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .services .header-section p{
+
+        line-height: 1.8rem;
+        text-align: left;
+        width: 40rem;
+    }
+
+    .services .row-services {
+        flex-direction: row;
+        align-items: unset;
+        justify-content: space-betwee;
+        gap: 2rem;
+    }
+    
+    .services .row-services .items-service{
+    
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+    
+    }
+    
+    .services .row-services .items-service img{
+        width: unset;
+    }
+    
+    .services .row-services .items-service span{
+        text-align: left;
+    }
+    
+    .services .row-services .items-service p{
+        text-align: left;
+    }
+    
+}
+
+@media screen and (max-width: 375px) {
+    .services .row-services .items-service img{
+        width: unset;
     }
 }
 
