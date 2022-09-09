@@ -66,6 +66,7 @@ header nav ul {
     padding: 1rem;
     background-color: var(--White);
     border-radius: .2rem;
+    z-index: 1;
 }
 
 header nav ul li{
@@ -145,6 +146,10 @@ header nav .btn {
     font-weight: 400;
     line-height: 1.8rem;
     text-align: center;
+}
+
+.slide .intro-product .btn{
+    z-index: 1;
 }
 
 .slide .intro-img-product img:first-child{
@@ -381,13 +386,22 @@ footer .copy-right{
         flex-direction: row;
         gap: 1.5rem;
         padding: 0rem;
-        border-radius: none;
+        border-radius: unset;
+        background-color: unset;
+        z-index: unset;
     }
 
     header nav ul li a{
         text-decoration: none;
         color: var(--Grayish-blue);
         font-weight: 400;
+        padding-bottom: 1.7rem;
+    }
+
+    header nav ul li a:hover{
+        border-bottom: .3rem solid transparent;
+        border-image: linear-gradient(90deg,hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+        border-image-slice: 1;
     }
 
     header nav .btn {
@@ -423,6 +437,10 @@ footer .copy-right{
     
     .slide .intro-product p{
         text-align: left;
+    }
+
+    .slide .intro-product .btn{
+        z-index: unset;
     }
     
     .slide .intro-img-product{
