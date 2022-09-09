@@ -177,7 +177,7 @@ main{
 
 .services .header-section span{
     color: var(--Dark-blue);
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 300;
     text-align: center;
 }
@@ -223,6 +223,68 @@ main{
     font-weight: 400;
     line-height: 1.8rem;
     text-align: center;
+}
+
+.articles {
+    background-color: var(--Very-light-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spaces) 2rem var(--spaces) 2rem;
+    gap: 3.2rem;
+}
+
+.articles .title{
+    color: var(--Dark-blue);
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.articles .row-articles{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.articles .row-articles .card-article{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 25rem;
+    background-color: var(--White);
+}
+
+.articles .row-articles .card-article img{
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+.articles .row-articles .card-article .desc-article{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    padding: 2.6rem;
+    padding-top: 0rem;
+}
+
+.articles .row-articles .card-article .desc-article small{
+    color: var(--Grayish-blue);
+    font-size: .8rem;
+}
+
+.articles .row-articles .card-article .desc-article span{
+    color: var(--Dark-blue);
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.articles .row-articles .card-article .desc-article p{
+    color: var(--Grayish-blue);
+    font-weight: 400;
+    line-height:1.5rem;
+    font-size: 1rem;
 }
 
 @media screen and (min-width: 1440px) {
@@ -311,7 +373,7 @@ main{
     }
 
     .services{
-    padding: var(--spaces) var(--left) var(--spaces) var(--left);
+        padding: var(--spaces) var(--left) var(--spaces) var(--left);
     }
 
     .services .header-section{
@@ -329,7 +391,7 @@ main{
     .services .row-services {
         flex-direction: row;
         align-items: unset;
-        justify-content: space-betwee;
+        justify-content: space-between;
         gap: 2rem;
     }
     
@@ -353,6 +415,51 @@ main{
     
     .services .row-services .items-service p{
         text-align: left;
+    }
+
+    .articles {
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: var(--spaces) var(--left) var(--spaces) var(--left);
+    }
+
+    .articles .title{
+        font-size: 2.5rem;
+        text-align: left;
+    }
+    
+    .articles .row-articles{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+        width: 100%;
+    }
+    
+    .articles .row-articles .card-article{
+        overflow: hidden;
+        align-items: flex-start;
+        border-top-left-radius: .5rem;
+        border-top-right-radius: .5rem;
+    }
+    
+    .articles .row-articles .card-article img{
+        width: 100%;
+        height: 11.8rem;
+    }
+    .articles .row-articles .card-article .desc-article{
+        padding: 1.3rem;
+        padding-top: 0rem;
+    }
+
+    .articles .row-articles .card-article .desc-article span{
+        font-size: 1.4rem;
+       
+    }
+
+    .articles .row-articles .card-article .desc-article p{
+        font-size: .9rem;
+        line-height:1.5rem;
     }
     
 }
