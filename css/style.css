@@ -532,63 +532,37 @@ footer .copy-right{
     }
 
     footer{
-        background-color: var(--Dark-blue);
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        justify-content: center;
-        gap: 3rem;
-        padding: 3rem 2rem 3rem 2rem;
+        justify-content: space-between;
+        padding: 3rem var(--left) 3rem var(--left);
     }
-    
+
     footer .footer-item{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        align-items: flex-end;
         justify-content: center;
         gap: 3rem;
     }
     
-    footer .logo-footer{
-        width: 12.5rem;
+    footer .footer-item:first-child{
+        align-items: flex-start;
+        gap: 4.5rem;
     }
-    
-    footer .social{
-        display: flex;
-        gap: 1.5rem;
-    }
-    
+
     footer .social img{
-        width: 1.8rem;
+        width: 1.5rem;
     }
+    
     
     footer nav{
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-    
+        flex-direction: row;
+        gap: 9rem;
     }
     
-    footer nav ul{
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-    }
     
     footer nav ul li{
-        list-style: none;
-        display: flex;
-        justify-content: center;
-    }
-    
-    footer nav ul li a {
-        text-decoration: none;
-        color: hsl(235, 11%, 80%);
-        font-weight: 400;
-    }
-    
-    footer .copy-right{
-        color: hsl(235, 11%, 80%);
+        justify-content: flex-start;
     }
     
 }
