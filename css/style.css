@@ -306,6 +306,14 @@ footer{
     padding: 3rem 2rem 3rem 2rem;
 }
 
+footer .footer-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
 footer .logo-footer{
     width: 12.5rem;
 }
@@ -317,6 +325,13 @@ footer .social{
 
 footer .social img{
     width: 1.8rem;
+}
+
+footer nav{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
 }
 
 footer nav ul{
@@ -514,6 +529,66 @@ footer .copy-right{
     .articles .row-articles .card-article .desc-article p{
         font-size: .9rem;
         line-height:1.5rem;
+    }
+
+    footer{
+        background-color: var(--Dark-blue);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        padding: 3rem 2rem 3rem 2rem;
+    }
+    
+    footer .footer-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+    
+    footer .logo-footer{
+        width: 12.5rem;
+    }
+    
+    footer .social{
+        display: flex;
+        gap: 1.5rem;
+    }
+    
+    footer .social img{
+        width: 1.8rem;
+    }
+    
+    footer nav{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    
+    }
+    
+    footer nav ul{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    footer nav ul li{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+    
+    footer nav ul li a {
+        text-decoration: none;
+        color: hsl(235, 11%, 80%);
+        font-weight: 400;
+    }
+    
+    footer .copy-right{
+        color: hsl(235, 11%, 80%);
     }
     
 }
