@@ -245,7 +245,7 @@ main{
 .articles .row-articles{
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .articles .row-articles .card-article{
@@ -441,12 +441,10 @@ main{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 2rem;
         width: 100%;
     }
     
     .articles .row-articles .card-article{
-        overflow: hidden;
         align-items: unset;
     }
 
@@ -458,19 +456,9 @@ main{
         width: 100%;
         height: unset;
     }
-/*
-    .articles .row-articles .card-article .img-article{
-        height:auto;
-        overflow: hidden;
-    }
-    
-    .articles .row-articles .card-article img{
-        width: 100%;
-        height: 100%;
-    }*/
     
     .articles .row-articles .card-article .desc-article{
-        padding: 1.3rem;
+        padding: 1.5rem;
         padding-top: 0rem;
     }
 
