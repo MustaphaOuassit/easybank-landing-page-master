@@ -62,7 +62,8 @@ header nav ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem 0 1rem 0;
+    padding: 1.5rem;
+    gap: 1.5rem;
     background-color: var(--White);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: .2rem;
@@ -72,23 +73,12 @@ header nav ul {
 header nav ul li{
     list-style: none;
     font-size: .9rem;
-    display: flex;
-    width: 100%;
 }
 
 header nav ul li a{
     text-decoration: none;
     color: var(--Dark-blue);
     font-weight: 400;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-header nav ul li a:hover{
-    background-color: #eee;
 }
 
 header nav .btn {
@@ -434,19 +424,9 @@ footer .copy-right{
         box-shadow: unset;
     }
 
-    header nav ul li{
-        display: unset;
-        width: unset;
-    }
-
     header nav ul li a{
-        text-decoration: none;
         color: var(--Grayish-blue);
-        font-weight: 400;
-        padding: unset;
         padding-bottom: 1.7rem;
-        display: unset;
-        width: unset;
     }
 
     header nav ul li a:hover{
