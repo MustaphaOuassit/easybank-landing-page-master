@@ -91,6 +91,11 @@ header nav .btn {
     border: none;
     color: var(--White);
     font-weight: 700;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: 0.5;
 }
 
 .display{
@@ -105,10 +110,6 @@ header nav .btn {
     display: flex;
 }
 
-main{
-    position: relative;
-    z-index: -1;
-}
 
 .slide{
     display: flex;
@@ -350,10 +351,12 @@ footer nav ul li a {
     text-decoration: none;
     color: hsl(235, 11%, 80%);
     font-weight: 400;
+    font-size: 1rem;
 }
 
 footer .copy-right{
-    color: hsl(235, 11%, 80%);
+    color: var(--Grayish-blue);
+    font-size: .9rem;
 }
 
 @media screen and (min-width: 1440px) {
