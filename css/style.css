@@ -36,6 +36,12 @@ body{
     font-family: var(--font);
 }
 
+h1{
+    position: absolute;
+    z-index: -1;
+    visibility: hidden;
+}
+
 header{
     padding: 1.3rem;
     background-color: var(--White);
