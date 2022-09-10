@@ -55,19 +55,19 @@ header .mobile-bg-header{
 }
 
 
-header nav{
+header .nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
 }
-header nav .icon-menu{
+header .nav .icon-menu{
     background: none;
     border: none;
     cursor: pointer;
 }
 
-header nav ul {
+header .nav ul {
     position: absolute;
     top: 4rem;
     width: 100%;
@@ -83,18 +83,18 @@ header nav ul {
     z-index: 1;
 }
 
-header nav ul li{
+header .nav ul li{
     list-style: none;
     font-size: .9rem;
 }
 
-header nav ul li a{
+header .nav ul li a{
     text-decoration: none;
     color: var(--Dark-blue);
     font-weight: 400;
 }
 
-header nav .btn {
+header .nav .btn {
     display: none;
 }
 
@@ -129,7 +129,7 @@ header .display-bg{
     display: block;
 }
 
-.display-list{
+header .nav .display-list{
     display: flex;
 }
 
@@ -362,26 +362,26 @@ footer .social svg:hover {
     fill: var(--Lime-green);
 }
 
-footer nav{
+footer .nav{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 
 }
 
-footer nav ul{
+footer .nav ul{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-footer nav ul li{
+footer .nav ul li{
     list-style: none;
     display: flex;
     justify-content: center;
 }
 
-footer nav ul li a {
+footer .nav ul li a {
     text-decoration: none;
     color: hsl(235, 11%, 80%);
     font-weight: 400;
@@ -405,7 +405,7 @@ footer button:hover {
 
 }
 
-footer a:hover {
+footer .nav a:hover{
     color: var(--Lime-green);
 }
 
@@ -428,11 +428,11 @@ footer .copy-right{
         display: none;
     }
 
-    header nav .icon-menu{
+    header .nav .icon-menu{
         display: none;
     }
 
-    header nav ul{
+    header .nav ul{
         position: relative;
         top: 0rem;
         width: auto;
@@ -447,29 +447,29 @@ footer .copy-right{
         box-shadow: unset;
     }
 
-    header nav ul li {
+    header .nav ul li {
         padding-top: 2.1rem;
         padding-bottom: 1.8rem;
         pointer-events: none;
         border-bottom: .3rem solid transparent;
     }
 
-    header nav ul li:hover {
+    header .nav ul li:hover {
         border-image: linear-gradient(90deg,hsl(136, 65%, 51%),hsl(192, 70%, 51%));
         border-image-slice: 1;
         transition: .3s;
     }
 
-    header nav ul li a{
+    header .nav ul li a{
         color: var(--Grayish-blue);
         pointer-events: auto;
     }
     
-    header nav ul li a:hover{
+    header .nav ul li a:hover{
         color: var(--Dark-blue);
     }
 
-    header nav .btn {
+    header .nav .btn {
         display: block;
     }
 
@@ -633,13 +633,13 @@ footer .copy-right{
     }
     
     
-    footer nav{
+    footer .nav{
         flex-direction: row;
         gap: 9rem;
     }
     
     
-    footer nav ul li{
+    footer .nav ul li{
         justify-content: flex-start;
     }
     
