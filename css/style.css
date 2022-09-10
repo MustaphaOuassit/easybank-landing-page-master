@@ -113,6 +113,10 @@ header nav .btn {
     opacity: 0.5;
 }
 
+.scroll{
+    overflow-y: hidden;
+}
+
 .display{
     display: none;
 }
