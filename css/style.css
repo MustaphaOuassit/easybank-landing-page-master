@@ -418,7 +418,7 @@ footer .copy-right{
         margin-right: auto;
     }
     header{
-        padding: 1.1rem var(--left) 1.1rem var(--left);
+        padding: 0 var(--left) 0 var(--left);
     }
 
     header .mobile-bg-header{
@@ -444,18 +444,26 @@ footer .copy-right{
         box-shadow: unset;
     }
 
+    header nav ul li {
+        padding-top: 2rem;
+        padding-bottom: 1.7rem;
+        pointer-events: none;
+        border-bottom: .3rem solid transparent;
+    }
+
+    header nav ul li:hover {
+        border-image: linear-gradient(90deg,hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+        border-image-slice: 1;
+        transition: .3s;
+    }
+
     header nav ul li a{
         color: var(--Grayish-blue);
-        padding-bottom: 1.7rem;
+        pointer-events: auto;
     }
     
     header nav ul li a:hover{
-        border-bottom: .3rem solid transparent;
-        border-image: linear-gradient(90deg,hsl(136, 65%, 51%),hsl(192, 70%, 51%));
-        border-image-slice: 1;
         color: var(--Dark-blue);
-        transition: .3s;
-        background-color: unset;
     }
 
     header nav .btn {
