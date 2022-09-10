@@ -39,6 +39,7 @@ body{
 h1{
     position: absolute;
     z-index: -1;
+    visibility: hidden;
 }
 
 header{
