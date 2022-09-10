@@ -1,4 +1,4 @@
-# Interactive card details form main
+# Easybank landing page master
 ![desktop-preview](./design/desktop-preview.jpg)
 
 ## Overview
