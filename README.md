@@ -25,4 +25,4 @@ The E-commerce Product Page application includes the following features:
 
 ## Getting Started
 
-To use the E-commerce Product Page, simply navigate to the URL where it is hosted: https://mouasit.github.io/E-commerce-product-page
+To use the E-commerce Product Page, simply navigate to the URL where it is hosted: https://mouasit.github.io/easybank-landing-page-master
