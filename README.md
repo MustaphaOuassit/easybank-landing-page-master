@@ -22,7 +22,7 @@ The E-commerce Product Page application includes the following features:
 - HTML 5
 - Css : flex-box / media query
 - Vanilla javascript
-- 
+
 ## Getting Started
 
 To use the E-commerce Product Page, simply navigate to the URL where it is hosted: https://mouasit.github.io/E-commerce-product-page
